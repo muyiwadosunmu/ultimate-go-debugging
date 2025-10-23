@@ -17,7 +17,7 @@ go version
 You should see output similar to:
 
 ```
-go version go1.17.6 linux/amd64
+go version go1.25.1 darwin/arm64
 ```
 
 Second, once you have Go installed you must install Delve. You can install the latest version of Delve via:
