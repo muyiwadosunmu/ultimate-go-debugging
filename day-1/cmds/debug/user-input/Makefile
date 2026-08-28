@@ -6,10 +6,10 @@ run:
 debug:
 	dlv debug
 
-#.PHONY: debug-headless
-#debug-headless:
-#	dlv debug --headless --listen :9091 --api-version 2
-#
-#.PHONY: connect-to-headless-delve
-#connect-to-headless-delve:
-#	dlv connect :9091
+.PHONY: debug-headless
+debug-headless:
+	dlv debug --headless --listen :9091 --api-version 2
+
+.PHONY: connect-to-headless-delve
+connect-to-headless-delve:
+	dlv connect :9091
