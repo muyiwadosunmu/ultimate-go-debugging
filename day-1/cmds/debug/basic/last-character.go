@@ -8,7 +8,11 @@ import (
 func main() {
 	fmt.Println("Hello Gophers! Pass me a word and I will print the last character")
 
-	arg := os.Args[0]
+	if len(os.Args) < 2 {
+		fmt.Println("You must supply an argument to this program")
+		os.Exit(0)
+	}
+	arg := os.Args[1]
 
-	fmt.Printf("The last character in that word is %c\n\n", arg[len(arg)])
+	fmt.Printf("The last character in that word is %c\n\n", arg[len(arg)-1])
 }
